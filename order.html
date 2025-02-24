@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order - Chen&Chi Cakes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Chen&Chi Cakes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="order-form">
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <label for="cakeType">Select Cake:</label>
+        <select id="cakeType">
+          <option value="Chocolate">Chocolate Cake</option>
+          <option value="Vanilla">Vanilla Cake</option>
+          <option value="Red Velvet">Red Velvet Cake</option>
+          <option value="Strawberry">Chocolate Cake</option>
+          <option value="Fruit Cake">Vanilla Cake</option>
+          <option value="Wedding Cake">Red Velvet Cake</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" required />
+
+        <button type="submit">Order Now</button>
+      </form>
+    </section>
+
+    <p class="contact-price">💬 Contact us for pricing details.</p>
+
+    <!-- 📞 Contact Section -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out!</p>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          placeholder="Write your message..."
+          rows="4"
+          required
+        ></textarea>
+
+        <a
+          href="https://wa.me/2349068770284?text=Hello%20Chen%26Chi,%20I%20want%20to%20inquire%20about%20cake%20pricing."
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          Send Message
+        </a>
+      </form>
+    </section>
+
+    <div id="notification" class="hidden">New Order Received!</div>
+
+    <footer>
+      <!-- 📞 WhatsApp Floating Button -->
+      <a href="https://wa.me/2349068770284" target="_blank" id="whatsapp-btn">
+        <img src="whatsappicon.png" alt="Chat on WhatsApp" />
+      </a>
+      <!-- 📷 Instagram Icon -->
+      <a
+        href="https://www.instagram.com/TreatsbyChen_chi"
+        target="_blank"
+        id="instagram-btn"
+      >
+        <img src="instagramicon.png" alt="Follow us on Instagram" />
+      </a>
+
+      <p>&copy; 2025 Chen&Chi Cakes</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
