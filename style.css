@@ -12,8 +12,9 @@ body {
 header h1, .contact-info {
     color: white;
 }
-
-
+ h1 {
+    color: aqua;
+}
 header {
     /* background: rgb(56, 56, 236); */
     color: white;
@@ -31,11 +32,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgba(255, 158, 158, 0.637);
     text-decoration: none;
     font-weight: bold;
 }
-
+nav ul li a:hover{
+    color: #28a745;
+}
 .hero {
     padding: 50px;
     background: #e74c3c;
@@ -116,6 +119,11 @@ nav ul li a {
 .gallery {
     text-align: center;
     padding: 20px;
+}
+
+.gallery h2 {
+    font-size: 50px;
+    color: #b71c1c;
 }
 
 .gallery-container {
@@ -300,8 +308,8 @@ nav ul li a {
     position: fixed;
     left: 20px;
     bottom: 20px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 #instagram-btn img {
@@ -391,5 +399,9 @@ header h1, .contact-info {
 
     #bg-video {
         display: none; /* Hide video on small screens */
+    }
+
+    .gallery-container{
+        width: 500px;
     }
 }

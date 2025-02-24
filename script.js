@@ -192,3 +192,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+const text = document.querySelector(".multi-color-text");
+const colors = ['Red', 'blue', 'green', 'white','orange', 'purple', ];
+
+text.innerHTML  = text.textContent.split('').map(letter =>
+      `<span style ="color: ${colors [Math.floor(Math.random()  *  colors.length)]};">${letter}</span>`
+).join('');
