@@ -401,7 +401,7 @@ header h1, .contact-info {
         display: none; /* Hide video on small screens */
     }
 
-    .gallery-container{
+    .gallery-container img{
         width: 500px;
     }
 }
